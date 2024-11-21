@@ -81,11 +81,13 @@ console.log("Heroes only:", heroesOnly.map(hero => hero.name));
 
 
 
-// JavaScript to update the battle log in real-time
+
+// Update the battle log with the current text
 document.getElementById('hero1').addEventListener('click', () => {
-    document.getElementById('battle-log').textContent += "\nBlaze Storm attacks Dark Phantom!";
+    document.getElementById('battle-log').textContent = "Blaze Storm attacks Dark Phantom!";
 });
 
 document.getElementById('villain1').addEventListener('click', () => {
-    document.getElementById('battle-log').textContent += "\nDark Phantom defends with shadow manipulation!";
+    document.getElementById('battle-log').textContent = "Dark Phantom defends with shadow manipulation!";
 });
+
