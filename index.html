@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dogbey Ferdinald">
+    <title>Superhero Battle Simulator</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Superhero Battle Simulator</h1>
+        <p>Choose actions for the hero and villain and see the battle unfold!</p>
+    </header>
+    
+    <main>
+        <section aria-labelledby="hero-actions">
+            <h2 id="hero-actions">Hero Actions</h2>
+            <button id="hero1" class="character-button" aria-label="Blaze Storm attacks Dark Phantom">
+                Blaze Storm Attacks
+            </button>
+        </section>
+        
+        <section aria-labelledby="villain-actions">
+            <h2 id="villain-actions">Villain Actions</h2>
+            <button id="villain1" class="character-button" aria-label="Dark Phantom defends with shadow manipulation">
+                Dark Phantom Defends
+            </button>
+        </section>
+        
+        <section aria-labelledby="battle-log-title">
+            <h2 id="battle-log-title">Battle Log</h2>
+            <div id="battle-log" aria-live="polite" role="log"></div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
